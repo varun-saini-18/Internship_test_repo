@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>web app</title>
+</head>
+<body>
+    <main >
+            <!-- <h1>Internship Assignment!</h1>
+            <br><br> -->
+        <div>
+            <td><select name="voucher" id="search-input">
+                <option value="voucher-1">Voucher 1</option>
+                <option value="voucher-2">Voucher 2</option>
+                <option value="voucher-3">Voucher 3</option>
+                <option value="voucher-4">Voucher 4</option>
+            </select></td>
+            <button id="search-btn">Search</button>
+         </div>
+
+         
+        <table id="table3" >
+            <thead>
+                <tr>
+                    <th style="background-color:powderblue;">Choose a Voucher Type:</th>
+                    <td><select name="voucher" id="name-input">
+                        <option value="voucher-1">Voucher 1</option>
+                        <option value="voucher-2">Voucher 2</option>
+                        <option value="voucher-3">Voucher 3</option>
+                        <option value="voucher-4">Voucher 4</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th style="background-color:powderblue;">HSN/SAC Code:</th>
+                    <td><input type="text" id="zero-input"></td>
+                </tr>           
+            </thead>
+        </table>
+       
+            <div class="row" style="margin-left:355px;">
+              <div class="column">
+                <table id="table1" style="background-color:powderblue;">
+                        <thead>
+                            <tr>
+                                <th>Debit GL Code</th>
+                                <td><input type="text" id="one-input" required></td>
+                            </tr>
+                            <tr>
+                                <th>Debit GL Name</th>
+                                <td><input type="text" id="two-input"></td>
+                            </tr>
+                            <tr>
+                                <th>IGST(%)</th>
+                                <td><input type="text" id="three-input"></td>
+                            </tr>
+                            <tr>
+                                <th>CGST(%)</th>
+                                <td><input type="text" id="four-input"></td>
+                            </tr>
+                            <tr>
+                                <th>SGST(%)</th>
+                                <td><input type="text" id="five-input"></td>
+                            </tr>              
+                        </thead>
+                    </table>
+              </div>
+              <div class="column">
+                <table id="table2" style="background-color:powderblue;" >
+                        <thead>
+                            <tr>
+                                <th>Credit GL Code</th>
+                                <td><input type="text" id="six-input"></td>
+                            </tr>
+                            <tr>
+                                <th>Credit GL Name</th>
+                                <td><input type="text" id="seven-input"></td>
+                            </tr>
+                            <tr>
+                                <th>IGST(%)</th>
+                                <td><input type="text" id="eight-input"></td>
+                            </tr>
+                            <tr>
+                                <th>CGST(%)</th>
+                                <td><input type="text" id="nine-input"></td>
+                            </tr>
+                            <tr>
+                                <th>SGST(%)</th>
+                                <td><input type="text" id="ten-input"></td>
+                            </tr>              
+                        </thead>
+                    </table>
+              </div>
+            </div>
+
+        <button id="add-name-btn">Add Name</button>
+        
+
+        <br><br>
+
+        <table id="table" style="background-color:rgb(226, 228, 146);">
+            <thead>
+                <th>Voucher Type</th>
+                <th>HSN/SAC Code</th>
+                <th>Debit GL Code</th>
+                <th>Debit GL Name</th>
+                <th>IGST</th>
+                <th>CGST</th>
+                <th>SGST</th>
+                <th>Credit GL Code</th>
+                <th>Credit GL Name</th>
+                <th>IGST</th>
+                <th>CGST</th>
+                <th>SGST</th>
+                <th>Delte</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <tr>
+                <th>Choose a Voucher Type:</th>
+                <td><select name="voucher" id="update-name-input">
+                    <option value="voucher-1">Voucher 1</option>
+                    <option value="voucher-2">Voucher 2</option>
+                    <option value="voucher-3">Voucher 3</option>
+                    <option value="voucher-4">Voucher 4</option>
+                </select></td>
+            </tr>
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
